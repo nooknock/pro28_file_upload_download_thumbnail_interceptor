@@ -51,8 +51,9 @@
 		
 		<mvc:interceptors>
 			<mvc:interceptor>
-				<mvc:mapping path="/test/*.do" />
+				<!-- <mvc:mapping path="/test/*.do" /> -->
 				<mvc:mapping path="/*/*.do" />
+				<!-- <beans:bean class="com.myspring.pro28.ex05.LocaleInterceptor"></beans:bean> -->
 				<beans:bean class="com.myspring.pro28.ex05.LocaleInterceptor"></beans:bean>
 			</mvc:interceptor>
 		</mvc:interceptors>
